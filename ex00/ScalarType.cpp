@@ -6,7 +6,7 @@
 /*   By: lluzembo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/23 13:49:15 by lluzembo          #+#    #+#             */
-/*   Updated: 2026/11/23 14:58:23 by lluzembo         ###   ########.fr       */
+/*   Updated: 2026/11/25 15:21:47 by lluzembo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,7 @@ void ScalarConverter::convert(std::string value)
     // convert char
         std::cout << "char: ";
         get_char_parsed(value);
+        std::cout << "int: ";
+        get_int_parsed(value);
             
 }
