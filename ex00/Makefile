@@ -6,19 +6,19 @@
 #    By: lluzembo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/23 13:34:25 by lluzembo          #+#    #+#              #
-#    Updated: 2026/11/23 13:53:57 by lluzembo         ###   ########.fr        #
+#    Updated: 2026/11/23 15:15:48 by lluzembo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScalarType
+NAME = convert
 
 CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+ 
+INCLUDES = ScalarType.hpp parser.hpp
 
-INCLUDES = ScalarType.hpp
-
-SRC = main.cpp ScalarType.cpp
+SRC = main.cpp ScalarType.cpp parser.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

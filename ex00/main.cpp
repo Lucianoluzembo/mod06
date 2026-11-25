@@ -6,7 +6,7 @@
 /*   By: lluzembo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/23 13:51:20 by lluzembo          #+#    #+#             */
-/*   Updated: 2026/11/23 14:26:10 by lluzembo         ###   ########.fr       */
+/*   Updated: 2026/11/23 15:01:57 by lluzembo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 int main(int ac, char **av)
 {
     if (ac != 2)
+    {
+        std::cerr << "Error\nUse:" << av[0] << " value" << std::endl;
         return (1);
+    }
     ScalarConverter obj;
     obj.convert(av[1]);
     
